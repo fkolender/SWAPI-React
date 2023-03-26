@@ -15,7 +15,12 @@ const Home = () => {
   return (
     <>
 
-     {characters != null ? (characters.map(character => (<div key={character.name}><a href='#'>{character.name}</a></div>))) : (false)} 
+     {characters != null ? (characters.map(character => 
+        (<div key={character.name}>
+            <a href={`/person/${characters.indexOf(character)}`}>{character.name}</a>
+            <p>{character.birth_year}</p>
+            
+        </div>))) : (false)} 
     
     
     </>
