@@ -8,4 +8,11 @@ const everyChar = async(state) => {
     console.log(request.data.results)
 }
 
-export { everyChar }
+const singleChar = async (id, state) => {
+
+    const request = await axios.get(`https://swapi.dev/api/people/${id}`)
+    console.log(request)
+}
+
+
+export { everyChar, singleChar }
