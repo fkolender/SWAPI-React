@@ -11,7 +11,10 @@ const Character = () => {
     })
   
     return (
+     <>   
     <div>You are looking at the page for {params.id}</div>
+    <a href='/'>Go back</a>
+    </>
   )
 }
 
